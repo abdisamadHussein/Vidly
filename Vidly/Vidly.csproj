@@ -204,6 +204,10 @@
     <Compile Include="Migrations\202009131154356_seedUsers.Designer.cs">
       <DependentUpon>202009131154356_seedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202009131301501_AddDrivingLincesToApplicationUser.cs" />
+    <Compile Include="Migrations\202009131301501_AddDrivingLincesToApplicationUser.Designer.cs">
+      <DependentUpon>202009131301501_AddDrivingLincesToApplicationUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -212,6 +216,7 @@
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershipType.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModel\CustomerFormView.cs" />
@@ -450,10 +455,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Movies\Detail.cshtml" />
     <Content Include="Views\Movies\FormMovie.cshtml" />
-    <Content Include="Views\Movies\Index.cshtml" />
+    <Content Include="Views\Movies\List.cshtml" />
     <Content Include="Views\Customers\CustomerForm.cshtml" />
     <Content Include="Views\Customers\Detail.cshtml" />
     <Content Include="Views\Customers\Index.cshtml" />
+    <Content Include="Views\Movies\ReadOnlyList.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -477,6 +483,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202009131154356_seedUsers.resx">
       <DependentUpon>202009131154356_seedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202009131301501_AddDrivingLincesToApplicationUser.resx">
+      <DependentUpon>202009131301501_AddDrivingLincesToApplicationUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
